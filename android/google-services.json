@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664050407788",
+    "project_id": "portfolio-794b9",
+    "storage_bucket": "portfolio-794b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664050407788:android:e6afb88a97bffc1f3a7b49",
+        "android_client_info": {
+          "package_name": "com.example.portfolio_monika"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLNhlZQhg9vH3v33jf1mVe1i337yIt_yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
