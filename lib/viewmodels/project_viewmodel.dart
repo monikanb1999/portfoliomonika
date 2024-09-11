@@ -22,10 +22,8 @@ class ProjectViewModel {
 
   static Future<String?> downloadURLExample({required String fileName}) async {
     try {
-      String downloadURL = await FirebaseStorage.instance
-          .ref("project_images")
-          .child(fileName)
-          .getDownloadURL();
+      String downloadURL =
+          await FirebaseStorage.instance.ref("project_images").child(fileName).getDownloadURL();
       return downloadURL;
     } on FirebaseException catch (e) {
       debugPrint(e.toString());

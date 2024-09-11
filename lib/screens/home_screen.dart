@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                       child: HoverCard(
                                         child: Container(
                                           width: Sizes.width / 2,
-                                          height: Sizes.height / 3,
+                                          height: Sizes.height / 2.50,
                                           padding: EdgeInsets.fromLTRB(
                                               10.adjust(), 3.adjust(), 10.adjust(), 3.adjust()),
                                           child: Column(
@@ -125,12 +125,15 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                                 Align(
                                                   alignment: Alignment.center,
                                                   child: SizedBox(
-                                                      height: Sizes.height / 7.5,
+                                                      height: Sizes.height / 8.5,
                                                       width: Sizes.width / 5.5,
                                                       child: Image.network(e["image"]!)),
                                                 ),
-                                                Text(e["data"]!,
-                                                    style: TextStyle(fontSize: 16.adjust())),
+                                                SizedBox(
+                                                    height: Sizes.height / 4.5,
+                                                    width: Sizes.width / 2.5,
+                                                    child: Text(e["data"]!,
+                                                        style: TextStyle(fontSize: 16.adjust()))),
                                               ]),
                                         ),
                                       ),
@@ -152,8 +155,8 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                     padding: const EdgeInsets.all(8.0),
                                     child: HoverCard(
                                       child: SizedBox(
-                                        width: Sizes.width / 4.6,
-                                        height: Sizes.width / 4.6,
+                                        width: Sizes.width / 4,
+                                        height: Sizes.height / 2,
                                         child: Padding(
                                           padding: EdgeInsets.fromLTRB(
                                               10.adjust(), 3.adjust(), 10.adjust(), 3.adjust()),
@@ -212,13 +215,14 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                               ),
                                               child: SizedBox(
                                                 width: Sizes.width / 1.5,
+                                                height: Sizes.height / 1.5,
                                                 child: Column(children: [
-                                                  SizedBox(height: Sizes.width * 0.01),
+                                                  SizedBox(height: Sizes.height * 0.01),
                                                   Text('${e["category"]} : ',
                                                       style: TextStyle(
                                                           fontSize: 22.adjust(),
                                                           fontWeight: FontWeight.bold)),
-                                                  SizedBox(height: Sizes.width * 0.01),
+                                                  SizedBox(height: Sizes.height * 0.01),
                                                   ...e["skills"]
                                                       .map((ee) => ListTile(
                                                             leading: const MyBullet(),
@@ -233,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                                             ),
                                                           ))
                                                       .toList(),
-                                                  SizedBox(height: Sizes.width * 0.01)
+                                                  SizedBox(height: Sizes.height * 0.05)
                                                 ]),
                                               )),
                                         ),
@@ -265,16 +269,15 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                             borderRadius: BorderRadius.circular(20),
                                           ),
                                           child: SizedBox(
-                                            width: Sizes.width / 3.5,
-
-                                            // height: Sizes.width / 5,
+                                            width: Sizes.width / 3,
+                                            height: Sizes.height / 2,
                                             child: Column(children: [
-                                              SizedBox(height: Sizes.width * 0.01),
+                                              SizedBox(height: Sizes.height * 0.01),
                                               Text('${e["category"]} : ',
                                                   style: TextStyle(
                                                       fontSize: 22.adjust(),
                                                       fontWeight: FontWeight.bold)),
-                                              SizedBox(height: Sizes.width * 0.01),
+                                              SizedBox(height: Sizes.height * 0.01),
                                               ...e["skills"]
                                                   .map((ee) => ListTile(
                                                         leading: const MyBullet(),
@@ -288,7 +291,7 @@ class _HomeScreenState extends State<HomeScreen> with GlobalKeys {
                                                         ),
                                                       ))
                                                   .toList(),
-                                              SizedBox(height: Sizes.width * 0.01)
+                                              SizedBox(height: Sizes.height * 0.01)
                                             ]),
                                           )),
                                     ),

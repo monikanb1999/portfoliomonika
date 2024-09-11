@@ -2,11 +2,11 @@ class Constants {
   static const List<Map<String, dynamic>> technical_skills = [
     {
       "category": "Programming Languages",
-      "skills": ["Dart", "Python", "Java", "HTML", "CSS"]
+      "skills": ["Dart", "Java", "HTML", "CSS"]
     },
     {
       "category": "Frameworks",
-      "skills": ["Flutter", "Spring Boot"]
+      "skills": ["Flutter", "Android Jetpack"]
     },
     {
       "category": "Database",
@@ -50,14 +50,12 @@ class Constants {
       "name": "Jitsi Integration",
       "data":
           "Experienced in integrating Jitsi for seamless video conferencing capabilities within mobile applications.",
-      "image":
-          "https://jitsi.org/wp-content/themes/jitsi/images/logo-web-2020.png",
+      "image": "https://jitsi.org/wp-content/themes/jitsi/images/logo-web-2020.png",
     },
     {
       "name": "State Management",
       "data": "Expertise in state management solutions like Getx, and Bloc.",
-      "image":
-          "https://raw.githubusercontent.com/felangel/bloc/master/assets/logos/bloc.png",
+      "image": "https://raw.githubusercontent.com/felangel/bloc/master/assets/logos/bloc.png",
     },
     {
       "name": "API Integration",
@@ -69,8 +67,7 @@ class Constants {
       "name": "UI/UX Design",
       "data":
           "Adept at designing user-friendly interfaces and ensuring a seamless user experience.",
-      "image":
-          "https://miro.medium.com/v2/resize:fit:564/0*0P6qXDT9vA50Pl_c.jpg",
+      "image": "https://miro.medium.com/v2/resize:fit:564/0*0P6qXDT9vA50Pl_c.jpg",
     }
   ];
 }

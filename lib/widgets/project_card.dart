@@ -58,7 +58,7 @@ class ProjectCard extends StatelessWidget {
                         const SizedBox(height: 20),
                         FutureBuilder<String?>(
                             future: ProjectViewModel.downloadURLExample(
-                                fileName: "${project.appUrl}.jpeg"),
+                                fileName: "${project.appUrl}.png"),
                             builder: (context, ds) {
                               return Container(
                                 width: Sizes.height / 3.5,
@@ -121,7 +121,7 @@ class ProjectCard extends StatelessWidget {
                           children: [
                             FutureBuilder<String?>(
                                 future: ProjectViewModel.downloadURLExample(
-                                    fileName: "${project.appUrl}.jpeg"),
+                                    fileName: "${project.appUrl}.png"),
                                 builder: (context, ds) {
                                   return Container(
                                     width: Sizes.height / 3.5,
@@ -147,24 +147,24 @@ class ProjectCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      // Column(
-                      //     children: project.description
-                      //         .map(
-                      //           (e) => SizedBox(
-                      //             width: Sizes.width / 1.7,
-                      //             child: ListTile(
-                      //               leading: const Icon(
-                      //                 Icons.arrow_circle_right_outlined,
-                      //                 color: Colors.lightGreen,
-                      //               ),
-                      //               title: Text(
-                      //                 e,
-                      //                 style: const TextStyle(fontSize: 20, color: Colors.white),
-                      //               ),
-                      //             ),
-                      //           ),
-                      //         )
-                      //         .toList())
+                      Column(
+                          children: project.description
+                              .map(
+                                (e) => SizedBox(
+                                  width: Sizes.width / 1.9,
+                                  child: ListTile(
+                                    leading: const Icon(
+                                      Icons.arrow_circle_right_outlined,
+                                      color: Colors.lightGreen,
+                                    ),
+                                    title: Text(
+                                      e,
+                                      style: const TextStyle(fontSize: 20, color: Colors.white),
+                                    ),
+                                  ),
+                                ),
+                              )
+                              .toList())
                     ],
                   )),
             );
